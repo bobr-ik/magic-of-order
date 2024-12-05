@@ -541,7 +541,7 @@ main{
         }
         .description{
             position: absolute;
-            /* display: none; */
+            display: none;
             bottom: 45px;
             padding: 10px;
             border-radius: 5px;
@@ -871,6 +871,10 @@ main{
     .service{
         width: calc(80vw - 20px) !important;
     }
+    
+}
+
+@media screen and (max-width: 350px) {
     .section5 > .zones > .zone-item > span > .description{
         width: 90vw;
         transform: translate(-52.5vw, 0);
