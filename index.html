@@ -18,18 +18,18 @@
         </label>
         <div class="header">
             <span class="navbar">
-                <p class="navbar_item">ОБО МНЕ</p>
-                <p class="navbar_item">УСЛУГИ</p>
-                <p class="navbar_item">ФОРМАТЫ</p>
-                <p class="navbar_item">ОТЗЫВЫ</p>
+                <button onclick="scroll_to('about_me')" class="navbar_item">ОБО МНЕ</button>
+                <button onclick="scroll_to('prices')" class="navbar_item">УСЛУГИ</button>
+                <button onclick="scroll_to('formats')" class="navbar_item">ФОРМАТЫ</button>
             </span>
     
             <span class="logo">
             </span>
     
             <span class="about">
-                <p class="contacts">КОНТАКТЫ</p>
-                <button class="create_request">СОЗДАТЬ ЗАЯВКУ</button>
+                <label for="check-3">
+                    <p class="create_request">СОЗДАТЬ ЗАЯВКУ</p>
+                </label>
             </span>
         </div>
     </header>
@@ -120,11 +120,11 @@
                 </li>
             </ul>
             <div class="button_div">
-                <button class="create_request">ШАГ В НОВУЮ ЖИЗНЬ</button>
+                <button onclick="scroll_to('prices')" class="create_request">ШАГ В НОВУЮ ЖИЗНЬ</button>
             </div>
         </div>
 
-        <div class="section4">
+        <div class="section4 scroll-elem" id="about_me">
             <h1>Авраменко Юлия, профессиональный организатор пространства.</h1>
             <div class="about">
                 <div class="photo-div">
@@ -142,7 +142,7 @@
         </div>
 
         <div class="section5">
-            <h1>ОРГАНИЗАЦИЯ ПОРЯДКА В ЖИЛЫХ ЗОНАХ</h1>
+            <h1 class="scroll-elem" id="formats">ОРГАНИЗАЦИЯ ПОРЯДКА В ЖИЛЫХ ЗОНАХ</h1>
 
             <div class="zones">
                 <div class="zone-item">
@@ -315,12 +315,17 @@
                             после организации 1 месяц бесплатная поддержка. Вы тестируете созданную систему. И при необходимости, мы ее корректируем.   
                         </li>
                     </ul>
-                    <p class="price">
-                        2000 руб/час
-                    </p>
-                    <button class="get_service">
-                        ХОЧУ ПОРЯДОК!
-                    </button>
+                    <span>
+                        <p class="price">
+                            2000 руб/час
+                        </p>
+
+                        <label for="check-3">
+                            <p class="get_service">
+                                ХОЧУ ПОРЯДОК!
+                            </p>
+                        </label>
+                    </span>
                     
                 </div>
                 <div class="service service2">
@@ -350,12 +355,17 @@
                             после организации 1 месяц бесплатная поддержка. Вы тестируете созданную систему. И при необходимости, мы ее корректируем. 
                         </li>
                     </ul>
-                    <p class="price">
-                        1500 руб/час
-                    </p>
-                    <button class="get_service">
-                        ПОМОГИТЕ!
-                    </button>
+                    <span>
+
+                        <p class="price">
+                            1500 руб/час
+                        </p>
+                        <label for="check-3">
+                            <p class="get_service">
+                                ПОМОГИТЕ!
+                            </p>
+                        </label>
+                    </span>
                 </div>
                 <div class="wrapper">
                     <div class="service service3">
@@ -373,12 +383,16 @@
                                 Когда вы готовы самостоятельно провести организацию своего дома и нужен свежий взгляд со стороны и варианты решения проблем.
                             </li>
                         </ul>
-                        <p class="price">
-                            2500 руб 1.5 часа
-                        </p>
-                        <button class="get_service">
-                            СПРОСИ МЕНЯ КАК
-                        </button>
+                        <span>
+                            <p class="price">
+                                2500 руб 1.5 часа
+                            </p>
+                            <label for="check-3">
+                                <p class="get_service">
+                                    СПРОСИ МЕНЯ КАК
+                                </p>
+                            </label>
+                        </span>
                     </div>
                     <div class="service service4">
                         <h2>
@@ -388,13 +402,18 @@
                             <li>Мастер-класс "Порядочный шкаф"</li>
                             <li>Мастер-класс "Кухня - сердце дома"</li>
                         </ul>
-                        <p class="price">
-                            Онлайн 500 руб/чел <br>
-                            Офлайн цена договорная
-                        </p>
-                        <button class="get_service">
-                            ВЫЗОВ МАСТЕРА
-                        </button>
+                        <span>
+
+                            <p class="price">
+                                Онлайн 500 руб/чел <br>
+                                Офлайн цена договорная
+                            </p>
+                            <label for="check-3">
+                                <p class="get_service">
+                                    ВЫЗОВ МАСТЕРА
+                                </p>
+                            </label>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -412,25 +431,73 @@
         </div>
     </label>
     <div class="contacts-text-me">
-        <div class="messenger">
-            <div class="photo" style="background-image: url(images/telegram.png);"></div>
-            <p>TELEGRAM</p>
-        </div>
-        <div class="messenger">
-            <div class="photo" style="background-image: url(images/whatsapp.png);"></div>
-            <p>WHATSAPP</p>
-        </div>
-        <div class="messenger">
-            <div class="photo" style="background-image: url(images/instagram.png);"></div>
-            <p>INSTAGRAM</p>
-        </div>
-        <div class="messenger">
-            <div class="photo" style="background-image: url(images/phone-call.png);"></div>
-            <p>PHONE</p>
+        <a href="https://t.me/mag_porjadka">
+            <div class="messenger">
+                <div class="photo" style="background-image: url(images/telegram.png);"></div>
+                <p>TELEGRAM</p>
+            </div>
+        </a>
+        <a href="https://wa.me/89261078551">
+            <div class="messenger">
+                <div class="photo" style="background-image: url(images/whatsapp.png);"></div>
+                <p>WHATSAPP</p>
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/mag_porjadka">
+            <div class="messenger">
+                <div class="photo" style="background-image: url(images/instagram.png);"></div>
+                <p>INSTAGRAM</p>
+            </div>
+        </a>
+
+        <a href="tel:89261078551">
+            <div class="messenger">
+                <div class="photo ph1" style="background-image: url(images/phone-call.png);"></div>
+                <p>PHONE</p>
+            </div>
+        </a>
+    </div>
+
+    <input type="checkbox" id="check-3">
+    <div class="popup_with_contacts">
+        <label for="check-3">
+            <svg class='cross' xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 15 15">
+                <path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd" />
+            </svg>
+        </label>
+        <h1>НАПИШИТЕ МНЕ В ЛЮБОЙ УДОБНОЙ СОЦИАЛЬНОЙ СЕТИ!</h1>
+        <div class="contacts">
+            <a href="https://t.me/mag_porjadka">
+                <div class="messenger">
+                    <div class="photo" style="background-image: url(images/telegram.png);"></div>
+                    <p>TELEGRAM</p>
+                </div>
+            </a>
+            <a href="https://wa.me/89261078551">
+                <div class="messenger">
+                    <div class="photo" style="background-image: url(images/whatsapp.png);"></div>
+                    <p>WHATSAPP</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/mag_porjadka">
+                <div class="messenger">
+                    <div class="photo" style="background-image: url(images/instagram.png);"></div>
+                    <p>INSTAGRAM</p>
+                </div>
+            </a>
+
+            <a href="tel:89261078551">
+                <div class="messenger">
+                    <div class="photo ph1" style="background-image: url(images/phone-call.png);"></div>
+                    <p>PHONE</p>
+                </div>
+            </a>
         </div>
     </div>
 
-    <div style="height: 100vh"></div>
+
 
     <script src="scripts/script.js"></script>
 </body>
