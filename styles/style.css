@@ -541,7 +541,7 @@ main{
         }
         .description{
             position: absolute;
-            display: none;
+            /* display: none; */
             bottom: 45px;
             padding: 10px;
             border-radius: 5px;
@@ -842,8 +842,8 @@ main{
         .zones{
             .zone-item{
                 .description{
-                    width: 15vw;
-                    transform: translate(-6vw, 0);
+                    width: 30vw;
+                    transform: translate(-20vw, 0);
                 }
                 .photo{
                     width: 100px;
@@ -870,5 +870,9 @@ main{
     }
     .service{
         width: calc(80vw - 20px) !important;
+    }
+    .section5 > .zones > .zone-item > span > .description{
+        width: 90vw;
+        transform: translate(-52.5vw, 0);
     }
 }
