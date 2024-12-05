@@ -43,7 +43,8 @@
 
 html {
     overflow-y:scroll;
-    overflow-x: hidden;
+    overflow-x: none;
+    scrollbar-width: none;
     background-color: whitesmoke;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -334,7 +335,7 @@ main{
     .photo-div{
         grid-column: 2;
         width: 40vw;
-        padding: 5vw;
+        padding: 5vw 0;
         min-height: 40vh;
         display: flex;
         justify-content: space-around;
@@ -871,7 +872,44 @@ main{
     .service{
         width: calc(80vw - 20px) !important;
     }
+    .section4 > .about > .description{
+        width: calc(100vw - 80px);
+        p{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            padding-top: 20px;
+        }
+    }
+
+    .contacts-text-me > .messenger{
+        margin: 0;
+        p{
+            font-size: 0.5rem;
+            padding: 0;
+        }
+        .photo{
+            width: 40px;
+            height: 40px;
+        }
+    }
     
+}
+
+@media screen and (max-width: 400px) {
+    .contacts-text-me > .messenger{
+        margin: 0 5px;
+        p{
+            font-size: 0.5rem;
+            padding: 0;
+            margin: 5px 0;
+        }
+
+        .photo{
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 
 @media screen and (max-width: 350px) {
