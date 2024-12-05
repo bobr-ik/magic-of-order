@@ -1064,6 +1064,31 @@ main{
 }
 
 @media (max-width: 500px) {
+    .section1 > .photos-div > .photos{
+        width: 90%;
+        height: 30vh;
+        .text-about-photo{
+            transform: translate(0, 40vh);
+            p{
+                width: 90%;
+                padding: 10px;
+                font-size: 0.7rem;
+            }
+        }
+        .photo-2{
+            display: none;
+        }
+        .photo-3{
+            display: none;
+        }
+    }
+    .section1 > .button_div > button{
+        font-size: 0.8rem;
+    }
+    .section1 > .button_div{
+        margin-top: 100px;
+    }
+
     .section1 > .name > h1{
         font-size: 1.3rem;
     }
@@ -1107,6 +1132,9 @@ main{
             width: 40px;
             height: 40px;
         }
+    }
+    .section1 > .button_div{
+        margin-top: 130px;
     }
 }
 
@@ -1231,6 +1259,9 @@ main{
     }
     .contacts-text-me{
         padding: 2px;
+    }
+    .section1 > .button_div{
+        margin-top: 180px;
     }
     
 }
