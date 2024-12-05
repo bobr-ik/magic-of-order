@@ -185,6 +185,7 @@ header{
         align-items: center;
         padding-left: 0;
         padding-right: 0;
+        padding-bottom: 20px;
 
         .create_request{
             width: 185.89px;
@@ -917,4 +918,31 @@ main{
         width: 90vw;
         transform: translate(-52.5vw, 0);
     }
+
+    .section1 > .name > h1{
+        font-size: 1rem;
+        padding-right: 0;
+        padding-left: 0;
+        width: 90vw
+    }
+    .section1 > .name{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section3 > ul > li > h2{
+        font-size: 1rem;
+    }
+    .section5{
+        h1{
+            font-size: 1rem;
+        }
+    }
+    .section4 > h1{
+        font-size: 1rem;
+    }
+    .section2 > .description > h1{
+        font-size: 1rem;
+    }
+    
 }
