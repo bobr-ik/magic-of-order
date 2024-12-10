@@ -1,37 +1,13 @@
 
-@font-face {
-    font-family: 'Yandex_sans'; 
-    src: url(../fonts/YandexSansText-Regular.ttf); 
-}
-    
-@font-face {
-    font-family: 'Yandex_italic'; 
-    src: url(../fonts/YandexSansText-RegularItalic.ttf); 
-}
-    
-    /* Жирный */
-@font-face {
-    font-family: 'Yandex bold'; 
-    src: url(../fonts/YandexSansText-Bold.ttf); 
-}
-@font-face {
-    font-family: 'Medium'; 
-    src: url(../fonts/YandexSansText-Medium.ttf); 
-}
-    
-@font-face {
-    font-family: 'Dela'; 
-    src: url(../fonts/Dela.ttf); 
-}
 
 @font-face {
     font-family: 'HachiMaru';
-    src: url(../fonts/HachiMaruPop-Regular.ttf);
+    src: url(../fonts/HachiMaruPop-Regular.woff2);
 }
 
 @font-face {
     font-family: 'Nunito';
-    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+    src: url(../fonts/Nunito-VariableFont_wght.woff2);
 }
 
 
