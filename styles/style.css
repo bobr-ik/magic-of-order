@@ -276,6 +276,7 @@ main{
             width: 50%;
             font-family: 'Nunito';
             background-color: white;
+            border-radius: 10px;
             padding: 40px;
             box-shadow: 0 0.5rem 1rem rgba(0,0,0, .1);
         }
@@ -346,6 +347,8 @@ main{
             background-size: cover;
             width: 19vw;
             height: 100%;
+            border-radius: 10px;
+
         }
         .photo2{
             
@@ -354,6 +357,8 @@ main{
             background-size: 19vw 102%;
             width: 19vw;
             height: 100%;
+            border-radius: 10px;
+
         }
     }
 }
@@ -467,6 +472,8 @@ main{
                 background-size: cover;
                 width: 100%;                
                 height: 35vw;
+                border-radius: 10px;
+
             }
         }
         .description{
